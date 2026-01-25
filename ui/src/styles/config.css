@@ -519,6 +519,13 @@
   opacity: 0.35;
 }
 
+.config-empty__icon svg {
+  width: 56px;
+  height: 56px;
+  stroke: currentColor;
+  fill: none;
+}
+
 .config-empty__text {
   color: var(--muted);
   font-size: 15px;

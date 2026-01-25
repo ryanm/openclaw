@@ -9,6 +9,7 @@ Docs: https://docs.clawd.bot
 - Venius (Venice AI): highlight provider guide + cross-links + expanded guidance. https://docs.clawd.bot/providers/venice
 
 ### Changes
+- Control UI: refresh design, typography, and iconography; ship local Clawdbot logo asset. (#1745) Thanks @EnzeD.
 - TTS: add Edge TTS provider fallback, defaulting to keyless Edge with MP3 retry on format failures. (#1668) Thanks @steipete. https://docs.clawd.bot/tts
 - Web search: add Brave freshness filter parameter for time-scoped results. (#1688) Thanks @JonUleis. https://docs.clawd.bot/tools/web
 - TTS: add auto mode enum (off/always/inbound/tagged) with per-session `/tts` override. (#1667) Thanks @sebslight. https://docs.clawd.bot/tts

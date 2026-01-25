@@ -534,6 +534,14 @@
   animation: fade-in 0.2s var(--ease-out);
 }
 
+.compaction-indicator svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.5px;
+}
+
 .compaction-indicator--active {
   animation: compaction-pulse 1.5s ease-in-out infinite;
 }
