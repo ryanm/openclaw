@@ -1,12 +1,12 @@
-import { createSubsystemLogger } from "../logging/subsystem.js";
-import type { MoltbotConfig } from "../config/config.js";
-import { resolveMemoryBackendConfig } from "./backend-config.js";
+import type { OpenClawConfig } from "../config/config.js";
 import type { ResolvedQmdConfig } from "./backend-config.js";
 import type {
   MemoryEmbeddingProbeResult,
   MemorySearchManager,
   MemorySyncProgressUpdate,
 } from "./types.js";
+import { createSubsystemLogger } from "../logging/subsystem.js";
+import { resolveMemoryBackendConfig } from "./backend-config.js";
 
 const log = createSubsystemLogger("memory");
 const QMD_MANAGER_CACHE = new Map<string, MemorySearchManager>();
@@ -17,7 +17,7 @@ export type MemorySearchManagerResult = {
 };
 
 export async function getMemorySearchManager(params: {
-  cfg: MoltbotConfig;
+  cfg: OpenClawConfig;
   agentId: string;
 }): Promise<MemorySearchManagerResult> {
   const resolved = resolveMemoryBackendConfig(params);
