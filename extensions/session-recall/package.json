@@ -1,0 +1,16 @@
+{
+  "name": "@openclaw/session-recall",
+  "version": "0.1.0",
+  "description": "Injects relevant context from recent sessions before each agent turn",
+  "type": "module",
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "zod": "^3.22.0"
+  },
+  "peerDependencies": {
+    "openclaw": "*"
+  }
+}
